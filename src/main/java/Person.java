@@ -18,11 +18,13 @@ public class Person {
     // doSomething(): an example of a non-static method for the Person class.
     //                This method just prints out a message saying something a
     //                normal person might say
+
     public void doSomething() {
         System.out.println("I'm watching Netflix");
     }
 
     // toString(): retuns a String representation of a Person (their full name)
+    @Override
     public String toString() {
         String str = firstName + " " + lastName;
         return str;
